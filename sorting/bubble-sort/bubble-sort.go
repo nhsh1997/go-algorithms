@@ -2,7 +2,7 @@ package bubble_sort
 
 import "fmt"
 
-func sort(list []int, ascending bool) {
+func Sort(list []int, ascending bool) {
 	var N int = len(list)
 	var count int
 
