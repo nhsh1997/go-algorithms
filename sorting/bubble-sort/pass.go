@@ -6,11 +6,11 @@ func pass(list []int, ascending bool){
 		firstElement := list[i]
 		secondElement := list[i + 1]
 		if ascending == true {
-			 if firstElement < secondElement {
+			 if firstElement > secondElement {
 			 	swap(list, i)
 			 }
 		} else {
-			if firstElement > secondElement {
+			if firstElement < secondElement {
 				swap(list, i)
 			}
 		}

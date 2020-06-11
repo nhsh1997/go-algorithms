@@ -5,7 +5,7 @@ import "github.com/nhsh1997/go-algorithms/sorting/bubble-sort"
 
 func main()  {
 	var numbers []int = []int{33, 91, 76, 8, 22}
-	var ascending bool = true
+	var ascending bool = false
 
 	fmt.Println("Original list: ", numbers)
 	bubble_sort.Sort(numbers, ascending)
