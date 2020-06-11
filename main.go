@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import "sorting/bubble-sort/bubble-sort.go"
+import "github.com/nhsh1997/go-algorithms/sorting/bubble-sort"
 
 func main()  {
 	var numbers []int = []int{33, 91, 76, 8, 22}
