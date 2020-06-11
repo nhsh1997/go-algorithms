@@ -2,7 +2,7 @@ package bubble_sort
 
 func pass(list []int, ascending bool){
 	N := len(list)
-	for i := 0; i < N ; i ++ {
+	for i := 0; i < N - 1 ; i ++ {
 		firstElement := list[i]
 		secondElement := list[i + 1]
 		if ascending == true {
