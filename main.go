@@ -8,6 +8,6 @@ func main()  {
 	var ascending bool = true
 
 	fmt.Println("Original list: ", numbers)
-	bubble_sort.sort(numbers, ascending)
+	bubble_sort.Sort(numbers, ascending)
 	fmt.Println("Sorted list: ", numbers)
 }
