@@ -16,7 +16,7 @@ func main()  {
 	fmt.Println("Sorted list: ", given_nums)
 
 	for i := 0; i < N - 1; i ++  {
-		if given_nums[i] < target {
+		if given_nums[i] <= target {
 			for j := i + 1; j < N ; j++ {
 				if (given_nums[i] + given_nums[j]) == target {
 					indices[0], indices[1] = i, j
