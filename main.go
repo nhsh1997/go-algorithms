@@ -1,16 +1,18 @@
 package main
 
-import "fmt"
-import "github.com/nhsh1997/go-algorithms/sorting/bubble-sort"
+import (
+	"fmt"
+	quick_sort "github.com/nhsh1997/go-algorithms/sorting/quick-sort"
+)
 
 func main()  {
 	var indices [2]int
-	var given_nums []int = []int{11, 2, 7, 15}
+	var given_nums []int = []int{11, 2, 9, 8, 4, 1, 15, 7}
 	var target int = 17
 	N := len(given_nums)
 	fmt.Println("Original list: ", given_nums)
 
-	bubble_sort.Sort(given_nums, true)
+	quick_sort.QuickSort(given_nums, true)
 
 
 	fmt.Println("Sorted list: ", given_nums)
