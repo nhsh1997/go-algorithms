@@ -27,10 +27,10 @@ func (p *Playlist) addSong(name, artist string) error {
 		p.Head = song
 	} else {
 		currentNode := p.Head
-		if currentNode.Next != nil {
+		for currentNode.Next != nil {
 			currentNode = currentNode.Next
 		}
-		currentNode = song
+		currentNode.Next = song
 	}
 	return nil
 }
