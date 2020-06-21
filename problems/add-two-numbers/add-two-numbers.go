@@ -1,7 +1,5 @@
 package add_two_numbers
 
-import "fmt"
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -18,6 +16,7 @@ func AddTwoNumbers (l1 *ListNode, l2 *ListNode) *ListNode {
 	currentResult := result
 
 	initFlag := false
+	flag := false
 
 	currentResult.Val = currentL1.Val + currentL2.Val
 	if currentResult.Val >= 10 {
@@ -32,7 +31,6 @@ func AddTwoNumbers (l1 *ListNode, l2 *ListNode) *ListNode {
 
 	currentL1 = currentL1.Next
 	currentL2 = currentL2.Next
-	flag := false
 
 	for currentL1 != nil || currentL2 != nil  {
 		sum := 0
@@ -55,8 +53,6 @@ func AddTwoNumbers (l1 *ListNode, l2 *ListNode) *ListNode {
 		} else {
 			flag = false
 		}
-
-		fmt.Println(sum)
 
 		if !initFlag {
 			currentResult.Next = &ListNode{
