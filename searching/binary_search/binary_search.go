@@ -1,4 +1,6 @@
-package binary_search
+package main
+
+import "fmt"
 
 func BinarySearch(list []int, left int, right int, x int) int {
 	if right >= left {
@@ -22,7 +24,7 @@ func BinarySearch(list []int, left int, right int, x int) int {
 }
 
 
-/*func main()  {
+func main()  {
 	list := []int{2, 4, 6, 9, 10}
 	N := len(list)
 	x := 4
@@ -34,4 +36,3 @@ func BinarySearch(list []int, left int, right int, x int) int {
 		fmt.Println(fmt.Sprintf("Not found ", x))
 	}
 }
-*/

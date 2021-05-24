@@ -4,3 +4,4 @@ type LinkedList struct {
 	value int
 	next *LinkedList
 }
+
